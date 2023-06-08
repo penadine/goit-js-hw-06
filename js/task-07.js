@@ -3,7 +3,7 @@ const ref = {
     text: document.querySelector('#text'),
 }
 
-ref.fontSizeControl.addEventListener('click', updateFontSize)
+ref.fontSizeControl.addEventListener('input', updateFontSize)
 
 function updateFontSize() {
     const currentFontSize = ref.fontSizeControl.value + 'px';

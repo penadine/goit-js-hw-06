@@ -18,7 +18,7 @@ galleryEl.style.display = 'flex';
 galleryEl.style.flexWrap = 'wrap';
 galleryEl.style.justifyContent = 'space-between';
 
-images.forEach(image => {
+const galleryItems = images.map(image => {
   const liEl = document.createElement('li');
   liEl.classList.add('gallery-item');
   liEl.style.listStyleType = 'none';
